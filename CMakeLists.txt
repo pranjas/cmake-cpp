@@ -30,12 +30,8 @@ endif()
 if(NOT DEFINED COMPILE_VERSION)
 	set(COMPILE_VERSION "undefined")
 endif()
-file (GLOB VECTOR_SRC
-	"./vector/*.cpp"
-	"./vector/*.c")
-add_executable(vector ${VECTOR_SRC})
-target_include_directories(vector PUBLIC "./common/include")
-target_include_directories(vector PRIVATE "./vector/include")
-target_include_directories(vector PUBLIC 
-				"${PROJECT_BINARY_DIR}")
+include_directories("./common/include")
+include_directories("${PROJECT_BINARY_DIR}")
 
+
+add_subdirectory("./vector")
