@@ -1,0 +1,2 @@
+#cmakedefine DEBUG_OUTPUT @DEBUG_OUTPUT@
+#cmakedefine COMPILE_VERSION "@COMPILE_VERSION@"
