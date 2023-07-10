@@ -26,5 +26,3 @@ std::ostream& operator << (std::ostream& os , const VectorObject &obj) {
 
 	return os;
 }
-
-
