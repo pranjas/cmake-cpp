@@ -36,3 +36,4 @@ include_directories("${PROJECT_BINARY_DIR}")
 
 add_subdirectory("./vector")
 add_subdirectory("./references")
+add_subdirectory("./shared_ptr")
